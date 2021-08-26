@@ -1,0 +1,387 @@
+:root {
+    --about-img: url("../img-item/about-1.png");
+    --home-img: url("../img-item/home-1.png");
+    --service-img: url("../img-item/service-1.png");
+    --redColor: #ff0000;
+    --blackColor: #000000;
+    --bg-alpha-Color: rgba(10, 0, 0, 0.7);
+    --lavander: lavender;
+}
+
+/* variable finished */
+
+/* universal selectors */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(red,darkred);
+    border-radius: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: #000;
+}
+
+i {
+    cursor: pointer;
+}
+
+button,
+span {
+    cursor: pointer;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/* finish to universal selectors */
+
+/* navbar styles */
+.navbar {
+    padding: 30px;
+}
+
+.nav {
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    background: var(--bg-alpha-Color);
+    visibility: hidden;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 200px 10px;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.navbar-disp {
+    display: flex;
+}
+
+.navbar-disp h1 {
+    color: #797979;
+    width: 70%;
+    font-weight: 100;
+}
+
+.navbar-icon-one i {
+    float: right;
+}
+
+.navbar-icon-one i,
+.navbar-icons-two i {
+    padding: 20px;
+}
+
+.nav-togle {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.checkbox {
+    width: 0;
+    height: 0;
+    top: 0;
+}
+
+.checkbox::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+#twit {
+    background: lightblue;
+    border-radius: 50%;
+    color: #fff;
+}
+
+#tel {
+    background: linear-gradient(45deg, red, pink, red, transparent);
+    border-radius: 100%;
+    color: #fff
+}
+
+#face {
+    background: blue;
+    color: #fff;
+    border-radius: 100%;
+}
+
+/* finish to navbar styles */
+
+
+/* styles home section */
+.home {
+    padding: 3rem 2rem;
+}
+
+.home-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img {
+    max-height: 1100px;
+    width: 50%;
+}
+
+.home-img img {
+    width: 100%;
+}
+
+.home-text {
+    justify-self: flex-start;
+    align-self: flex-start;
+    width: 50%;
+    padding-top: 80px;
+}
+
+.home-heading {
+    font-size: 4rem;
+    color: green;
+}
+
+.home-p {
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.home-p span {
+    border-bottom: 1px solid green;
+}
+
+.home-button-display {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 30px 0;
+}
+
+.home-button-display button {
+    border: none;
+    display: block;
+    font-size: 1.2rem;
+    background: black;
+    padding: 10px;
+    color: white;
+    border-radius: 10px
+}
+
+.upload {
+    background: red !important;
+}
+
+.you-tube:hover {
+    background: lightgrey;
+    color: black;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.upload:hover {
+    background: lightgrey !important;
+    color: black;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* finish to home section */
+
+
+/* start to service styles */
+.service {
+    padding: 3rem 2rem;
+    background: var(--lavander);
+}
+
+.service-disp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.service-text-item {
+    float: right;
+    width: 70%;
+    padding: 200px 10px;
+    margin: 0 30px;
+}
+
+.service-text-item h1 {
+    font-size: 2.4rem !important;
+}
+
+.service-text-item p {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    font-weight: 100;
+    color: #797979;
+}
+
+.service-text-item button {
+    border: none;
+    outline: none;
+    background-color: green;
+    padding: 10px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 1.4rem;
+    border-radius: 10px;
+}
+
+.service-icon-disp {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+
+.service-card .service-icon i {
+    padding: 10px;
+    font-size: 2rem;
+    color: lightgreen;
+    background-color: rgb(140, 191, 208);
+    border-radius: 100%;
+}
+
+.service-card .service-icon span {
+    display: block;
+    padding: 10px 0;
+    margin: 10px auto;
+    background: green;
+    width: 100px;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 15px;
+}
+
+.service-icon-text h1 {
+    font-size: 2rem;
+    color: green;
+    margin: 10px 0
+}
+
+.service-icon-text p {
+    text-align: left;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    font-family: monospace;
+    font-style: italic;
+}
+
+.service-icon-text span {
+    margin: 10px auto;
+    background: green;
+    width: 100px;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    display: block;
+    padding: 8px;
+}
+
+.service-card {
+    margin: 10px 10px;
+    background: #fff;
+    padding: 10px;
+}
+
+/* finish to service styles */
+
+
+/* start to about styles */
+.about {
+    margin: 100px 0;
+    padding: 0 2rem;
+}
+
+.about-img {
+    height: 500px;
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+
+.about-img::after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    background: green;
+    bottom: -20%;
+    left: 10%;
+    z-index: -1;
+}
+
+.about-img img {
+    width: 70%;
+    height: 500px;
+}
+
+.about-text {
+    position: absolute;
+    width: 300px;
+    padding: 3rem;
+    left: 30%;
+    top: 80%;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px 10px grey;
+}
+
+.about-text h1 {
+    font-size: 1.5rem;
+    color: green;
+    font-family: sans-serif;
+    margin: 10px 0;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: #797979;
+    margin: 10px 0;
+}
+
+.about-text span {
+    border-bottom: 1px solid green;
+}
+
+.about .container {
+    position: relative;
+}
+
+.about-text button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: green;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 4px;
+}
+/* finish to about styles */
+
+
+/* start to money styles */
+
+/* finish to money styles */

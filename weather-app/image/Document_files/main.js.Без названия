@@ -1,0 +1,11 @@
+let navbar = document.getElementById('nav'); //navbar 
+let navBtn = document.getElementById('checkbox'); //input type checbox on nav togle
+
+function menyu(){
+    if(navBtn.checked === true){
+        navbar.style.visibility = 'visible';
+    }
+    else{
+        navbar.style.visibility = 'hidden';
+    }
+}
